@@ -9,9 +9,10 @@ We implement the `rSN` and `asSN` methods. These are modifications of the standa
 An interpolation procedure is required which furthermore requires different (non-tensorized) quadrature sets. All these aspects are implemented in this code with `Julia`. 
 
 ## The effect of artificial scattering
-
+### Standard SN (for the line-source problem)
 ![Ray-effects in SN]( 	s4_expl.png )
 
+### asSN with the same number of ordinates (for the line-source problem)
 ![Ray-effects mitigated by asSN]( 	ass4_expl.png )
 
 
