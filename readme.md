@@ -8,6 +8,12 @@ We implement the `rSN` and `asSN` methods. These are modifications of the standa
 
 An interpolation procedure is required which furthermore requires different (non-tensorized) quadrature sets. All these aspects are implemented in this code with `Julia`. 
 
+## The effect of artificial scattering
+
+![Ray-effects in SN]( 	s4_expl.png )
+
+![Ray-effects mitigated by asSN]( 	ass4_expl.png )
+
 
 ## Installation
 
