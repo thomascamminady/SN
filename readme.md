@@ -1,15 +1,12 @@
-# rSN code by Thomas Camminady, Martin Frank, Jonas Kusch and Kerstin Kuepper #
+# SN code by Thomas Camminady, Martin Frank, Jonas Kusch, and Kerstin Kuepper #
 
 
 
 ## About
 
-We implement the `rSN` method. This is a modification of the standard `SN` method that mitigates ray-effects by rotation of the quadrature step after each time step. An interpolation procedure is required which furthermore requires different (non-tensorized) quadrature sets. All these aspects are implemented in this code with `Julia`. 
-The two figures below demonstrate the effect that the rotation of the angular quadrature set has on the overall solution quality. In the first picture we see ray-effects for the line-source problem. In the second picture these effects were mitigated due to the rotation.
+We implement the `rSN` and `asSN` methods. These are modifications of the standard `SN` method that mitigate ray-effects by (i) rotation of the quadrature step after each time step, or (ii) adding artificial angular diffusion via scattering.
 
-![Ray-effects in SN](rho_linesource_rotation_00.png )
-
-![Ray-effects mitigated by rSN](rho_linesource_rotation_10.png )
+An interpolation procedure is required which furthermore requires different (non-tensorized) quadrature sets. All these aspects are implemented in this code with `Julia`. 
 
 
 ## Installation
@@ -79,9 +76,3 @@ We can specify multiple parameters in `main.jl`. The content of `config.txt` wil
 Inside the function `methods.jl`, different modifications of the `SN` method are implemented. This includes the `rSN` approach as well as a convolution approach. `methods` will be executed at the end of each time loop and can modify the angular flux `phi` as well as all information about the quadrature set.
 
 
-
-## To do
-
-* Better plotting routines
-* More initial conditions
-* Different boundary conditions
