@@ -1,4 +1,4 @@
-# SN code by Thomas Camminady, Martin Frank, Jonas Kusch, and Kerstin Kuepper #
+# SN code by Thomas Camminady, Martin Frank, Cory Hauck, Jonas Kusch, and Kerstin Kuepper #
 
 
 
